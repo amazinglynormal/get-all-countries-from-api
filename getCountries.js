@@ -35,7 +35,10 @@ function extractCountryName(parsedData) {
 
 function writeToFile(data) {
   try {
-    fs.writeFileSync("countries.json", JSON.stringify(data));
+    fs.writeFileSync(
+      "../all-countries-json/countries.json",
+      JSON.stringify(data)
+    );
   } catch (e) {
     console.error(e);
   }
